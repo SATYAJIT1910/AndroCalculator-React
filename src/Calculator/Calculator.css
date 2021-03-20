@@ -16,3 +16,31 @@
     padding: auto;
     border: none;
 }
+.calc{
+    background-color: black;
+    color: white;
+    font-size: 42px;
+    border: none;
+    text-align: right;
+    resize: none;
+
+}
+.calcresult{
+    background-color: black;
+    color: #cccccc;
+    font-size: 25px;
+    border: none;
+    text-align: right;
+    resize: none;
+
+
+}
+.buttonscon{
+    background-color:black;
+    color: #1a74e9;
+    height: 55px;
+    width: 52px;
+    font-size: 26px;
+    padding: auto;
+    border: none;
+}

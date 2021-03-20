@@ -6,6 +6,12 @@ function Calculator(){
         <div style={{display:"grid",justifyContent:"center"}}>
             <div style={{padding:"20px"}}/>
             <div style={{background:"black"}}>
+             <div style={{padding:"30px"}}>
+        
+                <button className="degbtn">DEG</button>
+                <button className="optionbtn">⋮</button>
+                 
+                 </div>   
             <div style={{display:"grid"}}>
                 <textarea name="" className="calc" cols="10" rows="1" readOnly></textarea>
                 <textarea name="" className="calcresult" cols="1" rows="1" readOnly></textarea>

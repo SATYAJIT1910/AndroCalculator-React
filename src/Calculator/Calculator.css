@@ -44,3 +44,17 @@
     padding: auto;
     border: none;
 }
+.degbtn{
+    border: none;
+    color:#cccc;
+    background-color: black;
+    float: left;
+}
+.optionbtn{
+    border: none;
+    color:#cccc;
+    background-color: black;
+    font-size: 25px;
+    float: right;
+
+}

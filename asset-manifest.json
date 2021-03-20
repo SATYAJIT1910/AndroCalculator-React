@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.05a381c2.chunk.css",
-    "main.js": "/static/js/main.f932d603.chunk.js",
-    "main.js.map": "/static/js/main.f932d603.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0733fe2d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0733fe2d.js.map",
-    "static/js/2.75c15a2c.chunk.js": "/static/js/2.75c15a2c.chunk.js",
-    "static/js/2.75c15a2c.chunk.js.map": "/static/js/2.75c15a2c.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.05a381c2.chunk.css.map": "/static/css/main.05a381c2.chunk.css.map",
-    "static/js/2.75c15a2c.chunk.js.LICENSE.txt": "/static/js/2.75c15a2c.chunk.js.LICENSE.txt"
+    "main.css": "/AndroCalculator-React/static/css/main.05a381c2.chunk.css",
+    "main.js": "/AndroCalculator-React/static/js/main.f932d603.chunk.js",
+    "main.js.map": "/AndroCalculator-React/static/js/main.f932d603.chunk.js.map",
+    "runtime-main.js": "/AndroCalculator-React/static/js/runtime-main.1aaf52d8.js",
+    "runtime-main.js.map": "/AndroCalculator-React/static/js/runtime-main.1aaf52d8.js.map",
+    "static/js/2.75c15a2c.chunk.js": "/AndroCalculator-React/static/js/2.75c15a2c.chunk.js",
+    "static/js/2.75c15a2c.chunk.js.map": "/AndroCalculator-React/static/js/2.75c15a2c.chunk.js.map",
+    "index.html": "/AndroCalculator-React/index.html",
+    "static/css/main.05a381c2.chunk.css.map": "/AndroCalculator-React/static/css/main.05a381c2.chunk.css.map",
+    "static/js/2.75c15a2c.chunk.js.LICENSE.txt": "/AndroCalculator-React/static/js/2.75c15a2c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0733fe2d.js",
+    "static/js/runtime-main.1aaf52d8.js",
     "static/js/2.75c15a2c.chunk.js",
     "static/css/main.05a381c2.chunk.css",
     "static/js/main.f932d603.chunk.js"

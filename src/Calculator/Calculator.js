@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import "./Calculator.css"
-
+//import math, {all} from 'mathjs'
 
 
 function Calculator() {
@@ -11,10 +11,30 @@ function Calculator() {
     const [InverseState, SetInverseState] = useState(0);
    
 
+    const math = require('mathjs');
 function Equals(){
     //processing codes here , Mainstring holding a string from which we have to perform the mathematical Calculation.
-   
+    try{
+
+        SetMainstring( math.evaluate(Mainstring));
+        
+    }
+    catch{
+        SetMainstring("NaN");
+
+    }
+
 }
+function SecondScreen(){
+
+    try{
+        return math.evaluate(Mainstring);
+    }
+    catch{
+        return "NaN"
+    }
+}
+
 
 
     function Mytxtchange() {
@@ -75,27 +95,27 @@ function Equals(){
                 </div>
                 <div style={{ display: "grid" }}>
                     <textarea name="" className="calc" cols="10" rows="1" readOnly value={Mainstring}></textarea>
-                    <textarea name="" className="calcresult" cols="1" rows="1" readOnly></textarea>
+                    <textarea name="" className="calcresult" cols="1" rows="1" readOnly value={SecondScreen()}></textarea>
                 </div>
 
                 <div style={{ background: "#1a74e9" }}>
                     <div>
                         <button className="buttonsup" onClick={Inverse}>INV</button>
                         <button className="buttonsup" onClick={Mytxtchange}>{ChangeTXT}</button>
-                        <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('sin(','arcsin('))}>{TxtChanger('sin','sin⁻¹')}</button>
-                        <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('cos(','arccos('))}>{TxtChanger('cos','cos⁻¹')}</button>
-                        <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('tan(','arctan('))} >{TxtChanger('tan','tan⁻¹')}</button>
+                        <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('sin(','asin('))}>{TxtChanger('sin','sin⁻¹')}</button>
+                        <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('cos(','acos('))}>{TxtChanger('cos','cos⁻¹')}</button>
+                        <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('tan(','atan('))} >{TxtChanger('tan','tan⁻¹')}</button>
                     </div>
                     <div>
                         <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+'%')}>%</button>
-                        <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('ln(','2.71^'))}>{TxtChanger('ln','eˣ')}</button>
+                        <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('ln','2.71^'))}>{TxtChanger('ln','eˣ')}</button>
                         <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('log(','10^'))}>{TxtChanger('log','10ˣ')}</button>
                         <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('sqrt(','^2'))}>{TxtChanger('√','x²')}</button>
                         <button className="buttonsup"onClick={()=>SetMainstring(Mainstring+'^')}>^</button>
                     </div>
                     <div>
                         <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+'pi')}>∏</button>
-                        <button className="buttonsup"onClick={()=>SetMainstring(Mainstring+'2.71')}>е</button>
+                        <button className="buttonsup"onClick={()=>SetMainstring(Mainstring+'e')}>е</button>
                         <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+'(')}>(</button>
                         <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+')')}>)</button>
                         <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+'!')}>!</button>

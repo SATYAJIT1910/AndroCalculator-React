@@ -8,14 +8,14 @@ function Calculator() {
     const [Mainstring,SetMainstring]=useState("");
     const [ChangeTXT, SetChangeTXT] = useState("RAD");
     const [ChangeTXT2, SetChangeTXT2] = useState("DEG");
-    const [ChangeSin, SetChangeSin] = useState("Sin");
     const [InverseState, SetInverseState] = useState(0);
-    /*Math.js codes*/
+   
 
 function Equals(){
-   // SetMainstring(math.evalute(Mainstring));
+    //processing codes here , Mainstring holding a string from which we have to perform the mathematical Calculation.
+   
 }
-//
+
 
     function Mytxtchange() {
         if (ChangeTXT == "RAD") {
@@ -82,15 +82,15 @@ function Equals(){
                     <div>
                         <button className="buttonsup" onClick={Inverse}>INV</button>
                         <button className="buttonsup" onClick={Mytxtchange}>{ChangeTXT}</button>
-                        <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('sin','arcsin'))}>{TxtChanger('sin','sin⁻¹')}</button>
+                        <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('sin(','arcsin('))}>{TxtChanger('sin','sin⁻¹')}</button>
                         <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('cos(','arccos('))}>{TxtChanger('cos','cos⁻¹')}</button>
                         <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('tan(','arctan('))} >{TxtChanger('tan','tan⁻¹')}</button>
                     </div>
                     <div>
                         <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+'%')}>%</button>
-                        <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('ln','2.71^'))}>{TxtChanger('ln','eˣ')}</button>
+                        <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('ln(','2.71^'))}>{TxtChanger('ln','eˣ')}</button>
                         <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('log(','10^'))}>{TxtChanger('log','10ˣ')}</button>
-                        <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('sqrt','^2'))}>{TxtChanger('√','x²')}</button>
+                        <button className="buttonsup" onClick={()=>SetMainstring(Mainstring+ FunChanger('sqrt(','^2'))}>{TxtChanger('√','x²')}</button>
                         <button className="buttonsup"onClick={()=>SetMainstring(Mainstring+'^')}>^</button>
                     </div>
                     <div>

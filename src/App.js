@@ -10,6 +10,21 @@ function App(){
       <h1 style={{justifyContent:"center",display:"flex"}}>AndroCalculator</h1>
       <h2 style={{justifyContent:"center",display:"flex"}}>Inspired from Google Calculator</h2>
       <h3 style={{justifyContent:"center",display:"flex"}}>Made by Satyajit Ghosh</h3>
+      <div>
+        <li>
+          History not Implemented
+        </li>
+        <li>
+          Light Theme not Implemented
+        </li>
+        <li>
+          ln and Degree mode not Implemented
+        </li>
+        <li>
+          Requires packages only avaiable in Java / .NET . A Backend with ASP.NET or with any Java Backend Framework required .
+        </li>
+
+      </div>
 
     </div>
     <div>

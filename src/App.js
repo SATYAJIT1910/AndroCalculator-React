@@ -21,7 +21,7 @@ function App(){
           ln and Degree mode not Implemented
         </li>
         <li>
-          Requires packages only avaiable in Java / .NET . A Backend with ASP.NET or with any Java Backend Framework required .
+          Requires packages only available in Java / .NET . A Backend with ASP.NET or with any Java Backend Framework required .
         </li>
 
       </div>

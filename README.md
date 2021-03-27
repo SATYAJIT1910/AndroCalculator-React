@@ -1,3 +1,9 @@
+# Current Issues
+History not Implemented
+Light Theme not Implemented
+ln and Degree mode not Implemented
+Requires packages only available in Java / .NET . A Backend with ASP.NET or with any Java Backend Framework required .
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

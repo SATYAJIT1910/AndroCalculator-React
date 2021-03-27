@@ -1,7 +1,7 @@
 # Current Issues
-1. History not Implemented\
-2. Light Theme not Implemented\
-3. ln and Degree mode not Implemented\
+1. History not Implemented
+2. Light Theme not Implemented
+3. ln and Degree mode not Implemented
 4. Requires packages only available in Java / .NET . A Backend with ASP.NET or with any Java Backend Framework required .
 
 # Getting Started with Create React App
